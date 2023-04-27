@@ -1,0 +1,31 @@
+﻿@model EmployeeManagement.Models.AddEmployeeViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+
+<form method="POST" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" asp-for="Name">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" asp-for="Email">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">PhoneNumber</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" asp-for="PhoneNumber">
+        </div>
+    </div>
+    
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
